@@ -20,7 +20,7 @@
   overflow: hidden;
 }
 
-/* Fullscreen Video */
+
 .video-bg {
   position: fixed;
   top: 0;
@@ -34,7 +34,7 @@
   z-index: -2;
 }
 
-/* Transparent Dark Layer */
+
 .overlay {
   position: fixed;
   inset: 0;
@@ -44,7 +44,7 @@
   z-index: -1;
 }
 
-/* Existing Content */
+
 .content {
   position: relative;
   z-index: 1;

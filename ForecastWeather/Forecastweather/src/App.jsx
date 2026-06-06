@@ -9,17 +9,17 @@ import cloudsVideo from "./assets/videos/clouds.mp4";
 import sunnyVideo from "./assets/videos/sunny.mp4";
 
 function App() {
-  const [weatherData, setWeatherData] = useState(null);
+  const [weatherData,setWeatherData]=useState(null);
 
-  const getWeather = async (city) => {
+  const getWeather=async (city) => {
     try {
-      const apiKey = import.meta.env.VITE_WEATHER_API_KEY;
+      const apiKey=import.meta.env.VITE_WEATHER_API_KEY;
 
-      const response = await fetch(
+      const response=await fetch(
         `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`
       );
 
-      const data = await response.json();
+      const data=await response.json();
 
       if (data.cod === "404") {
         alert("City not found");
@@ -32,37 +32,37 @@ function App() {
     }
   };
 
-  // ---------------- VIDEO LOGIC ----------------
+  //VIDEO LOGIC 
 
-  let backgroundVideo = null;
+  let backgroundVideo=null;
 
   if (weatherData) {
-    const condition = weatherData.weather[0].main;
+    const condition =weatherData.weather[0].main;
 
     switch (condition) {
       case "Rain":
       case "Drizzle":
       case "Thunderstorm":
-        backgroundVideo = rainVideo;
+        backgroundVideo =rainVideo;
         break;
 
       case "Clouds":
-        backgroundVideo = cloudsVideo;
+        backgroundVideo=cloudsVideo;
         break;
 
       case "Clear":
-        backgroundVideo = clearVideo;
+        backgroundVideo=clearVideo;
         break;
       case "Snow":
         backgroundVideo=snowVideo;
         break;
-        
+
       default:
-        backgroundVideo = sunnyVideo;
+        backgroundVideo=sunnyVideo;
     }
   }
 
-  // ------------------------------------------------
+  
 
   return (
     <div className="app">
@@ -81,10 +81,10 @@ function App() {
         </video>
       )}
 
-      {/* Transparent Overlay */}
+     
       <div className="overlay"></div>
 
-      {/* Existing Content */}
+     
       <div className="content">
         <h1 className="main-heading">Weather App</h1>
 
