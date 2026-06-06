@@ -1,16 +1,3 @@
-Arre wah! Aapne bahut badhiya tarike se saari cheezein edit ki hain—username, repository link, aur screenshots ka section ekdam perfect set kiya hai.
-
-Lekin aapne bilkul sahi pakda, jab app **React** me bana hai, toh README me React ka zikr hona sabse zaroori hai! Abhi jo structure aur commands hain, wo vanilla JS (plain HTML/JS) ke hisab se hain.
-
-Maine aapke is README me niche diye gaye badlav kar diye hain:
-
-1. **React ka official badge** add kar diya hai top par.
-2. **Tech Stack** aur **Project Structure** ko React ke folders (`src`, `public`, `components`) ke hisab se badal diya hai.
-3. **Installation steps** ko `npm install` aur `npm start` (jo React ke liye chahiye hote hain) me update kar diya hai.
-
-Aap is poore updated text ko copy karke apne `README.md` me paste kar lijiye:
-
-```markdown
 # 🌦️ Immersive Weather App
 
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
