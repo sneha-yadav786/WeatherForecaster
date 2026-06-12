@@ -4,6 +4,8 @@ import "../styles/WeatherCard.css";
 function WeatherCard({ weatherData }) {
   const city = weatherData.name;
   const temp = weatherData.main.temp;
+  const feelslike = weatherData.main.feels_like;
+  const humidity = weatherData.main.humidity;
   const condition = weatherData.weather[0].main;
   const icon = weatherData.weather[0].icon;
 
@@ -18,6 +20,8 @@ function WeatherCard({ weatherData }) {
       <h1>{temp}°C</h1>
 
       <p>{condition}</p>
+      <p >Feels like-{feelslike}</p>
+      <p >Humidity-{humidity}</p>
 
       <Clock />
     </div>

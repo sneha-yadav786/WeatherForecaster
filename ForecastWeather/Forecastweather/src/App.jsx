@@ -98,8 +98,9 @@ function App() {
         backgroundVideo = sunnyVideo;
     }
   }
-
+   console.log(weatherData);
   return (
+   
     <div className="app">
       {/* Background Video */}
       {backgroundVideo && (
@@ -129,7 +130,7 @@ function App() {
         {/* Search History */}
         {history.length > 0 && (
           <>
-            <h3>Recent Searches</h3>
+            <h3 className="recent-search">Recent Searches</h3>
 
             <div className="history-container">
               {history.map((city, index) => (
@@ -139,11 +140,12 @@ function App() {
                   onClick={() => getWeather(city)}
                 >
                   {city}
+                 
                 </span>
               ))}
             </div>
 
-            <button onClick={clearHistory}>
+            <button className="history-btn" onClick={clearHistory}>
               Clear History
             </button>
           </>

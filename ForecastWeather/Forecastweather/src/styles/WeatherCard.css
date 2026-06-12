@@ -22,7 +22,7 @@
 }
 
 .weather-card p {
-  font-size: 1.5rem;
+  font-size: 1rem;
   text-transform: capitalize;
 }
 
@@ -41,3 +41,4 @@
     transform: translateY(0);
   }
 }
+

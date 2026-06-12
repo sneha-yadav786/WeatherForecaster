@@ -6,6 +6,36 @@
 }
 
 body {
-  background: linear-gradient(135deg, #0f172a, #1e293b);
+  background: linear-gradient(135deg, #0f172a, #96bcf8);
   min-height: 100vh;
+}
+.history-container {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap ;
+  gap: 20px;
+}
+
+.history-btn {
+  margin: 5px;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 20px;
+  background-color: skyblue;
+  font-size: medium;
+}
+.history-chip{
+  margin-top: 30px;
+  padding: 4px;
+  background-color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.recent-search{
+  color: skyblue;
+  margin-top: 10px;
 }
