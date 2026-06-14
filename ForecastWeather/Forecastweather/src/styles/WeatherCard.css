@@ -42,3 +42,8 @@
   }
 }
 
+@media (max-width: 768px) {
+  .weather-card h1 {
+    font-size: 3rem;
+  }
+}
